@@ -28,7 +28,6 @@ class Widget_Appaer_Disappear {
 	public function widget_form( $widget, $return, $instance ) {
 		$name    = 'widget-' . $widget->id_base . '[' . $widget->number . ']';
 		$options = array(
-			array( 'disappear-all', '非表示 ( 画面サイズ : all )' ),
 			array( 'disappear-xs', '非表示 ( 画面サイズ : xs )' ),
 			array( 'disappear-sm', '非表示 ( 画面サイズ : sm )' ),
 			array( 'disappear-md', '非表示 ( 画面サイズ : md )' ),
@@ -55,12 +54,11 @@ class Widget_Appaer_Disappear {
 	 * @param array $new_instance Array of new widget settings.
 	 */
 	public function widget_update_callback( $instance, $new_instance ) {
-		$instance['disappear-all'] = $new_instance['disappear-all'];
-		$instance['disappear-xs']  = $new_instance['disappear-xs'];
-		$instance['disappear-sm']  = $new_instance['disappear-sm'];
-		$instance['disappear-md']  = $new_instance['disappear-md'];
-		$instance['disappear-lg']  = $new_instance['disappear-lg'];
-		$instance['disappear-xl']  = $new_instance['disappear-xl'];
+		$instance['disappear-xs'] = $new_instance['disappear-xs'];
+		$instance['disappear-sm'] = $new_instance['disappear-sm'];
+		$instance['disappear-md'] = $new_instance['disappear-md'];
+		$instance['disappear-lg'] = $new_instance['disappear-lg'];
+		$instance['disappear-xl'] = $new_instance['disappear-xl'];
 		return $instance;
 	}
 
@@ -78,8 +76,7 @@ class Widget_Appaer_Disappear {
 		$widget_num = $widget_obj['params'][0]['number'];
 
 		$widget_class  = '';
-		$widget_class .= isset( $widget_opt[ $widget_num ]['disappear-all'] ) ? 'd-none ' : 'd-block ';
-		$widget_class .= isset( $widget_opt[ $widget_num ]['disappear-xs'] ) ? 'd-xs-none ' : 'd-xs-block ';
+		$widget_class .= isset( $widget_opt[ $widget_num ]['disappear-xs'] ) ? 'd-none ' : 'd-block ';
 		$widget_class .= isset( $widget_opt[ $widget_num ]['disappear-sm'] ) ? 'd-sm-none ' : 'd-sm-block ';
 		$widget_class .= isset( $widget_opt[ $widget_num ]['disappear-md'] ) ? 'd-md-none ' : 'd-md-block ';
 		$widget_class .= isset( $widget_opt[ $widget_num ]['disappear-lg'] ) ? 'd-lg-none ' : 'd-lg-block ';
