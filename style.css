@@ -1,0 +1,294 @@
+@charset "utf-8";
+
+/*!
+Theme Name: Lightning Pro Child
+Theme URI:
+Template: lightning-pro
+Description:
+Author:
+Tags:
+Version: 0.0.0
+*/
+
+.entry-meta {
+	text-align: left;
+}
+
+.sidebar-2 {
+	display: none;
+}
+
+.mainSection,
+.subSection {
+	padding: 0 10px;
+}
+
+.relate-outer,
+.archive-outer,
+.entry-outer,
+.widget,
+.comments-area,
+.veu_relatedPosts.veu_contentAddSection {
+	margin-bottom: 10px;
+}
+
+.archive-outer,
+.entry-outer,
+.mainSection .widget,
+.sideSection .widget,
+.relate-outer,
+.comments-area,
+.veu_relatedPosts.veu_contentAddSection,
+.comments-area .no-comments {
+	border: 1px solid #e5e5e5;
+	background-color: #fff;
+}
+
+.veu_contentAddSection {
+	margin-top: 0;
+}
+
+.veu_relatedPosts > .row {
+	padding: 0 10px;
+	margin: 0;
+	justify-content: space-around;
+}
+
+.veu_relatedPosts .relatedPosts_item {
+	padding: 0;
+	margin: 0;
+}
+
+.comments-area .no-comments {
+	margin-bottom: 0;
+}
+
+.comments-area .comment,
+.comments-area .comments-title {
+	padding: 10px;
+}
+
+.comment-respond .comment-reply-title {
+	margin: 0;
+	padding: 10px 0;
+	border: none;
+}
+
+.comments-area .comment-list,
+.comments-area .comment-respond {
+	padding: 0 10px;
+}
+
+.comments-area,
+.comments-area .comment .children,
+.comments-area .comment .children .comment {
+	padding: 0;
+}
+
+.relate-header,
+.veu_postList,
+.comments-area .comment-header {
+	margin: 0;
+}
+
+.mainSection .widget {
+	padding: 9px 19px;
+	margin-bottom: 10px;
+}
+
+.mainSection .widget .widget-title.mainSection-title {
+	margin: -9px -19px 10px -19px;
+	padding: 9px 19px;
+}
+
+.sideSection .widget {
+	padding: 9px;
+	margin-bottom: 10px;
+}
+
+.sideSection .widget .widget-title.subSection-title {
+	margin: -9px -9px 10px -9px;
+	padding: 9px;
+}
+
+.mainSection-title {
+	margin: 0;
+}
+
+.archive-header,
+.archive-body,
+.entry-header,
+.entry-body,
+.entry-footer,
+.relate-body,
+.page .mainSection .entry-header {
+	padding: 9px 19px;
+	margin: 0;
+}
+
+.archive-title,
+.entry-header .entry-meta,
+.entry-header .entry-title,
+.page .mainSection .entry-header .entry-meta,
+.page .mainSection .entry-header .entry-title {
+	margin-bottom: 0;
+}
+
+.archive-title,
+.page .mainSection .entry-header .entry-title {
+	font-size: 28px;
+	padding: 18px 0;
+}
+
+.vk_contact {
+	margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+
+	.headerTop {
+		color: #666;
+		background-color: #f9f9f9;
+		margin-top: -7px;
+		border-bottom: 1px solid #f3f3f3;
+		display: block;
+	}
+
+	.headerTop .container {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		overflow: visible;
+		margin: 0 auto;
+	}
+
+	.headerTop .headerTop_description {
+		position: relative;
+		top: 7px;
+		display: block;
+		margin: 0;
+		padding: 7px 45px calc(7px + 7px);
+		width: 100%;
+		line-height: 1.4;
+		text-align: center;
+		white-space: nowrap;
+	}
+
+	.headerTop nav,
+	.headerTop_contactBtn {
+		display: none;
+	}
+
+	.siteHeader .headerTop .container {
+		padding: 0 15px;
+	}
+}
+
+@media (min-width: 992px) {
+
+	.mainSection {
+		width: 620px;
+	}
+
+	.subSection {
+		width: 340px;
+	}
+
+	.siteContent > .container > .row {
+		display: flex;
+	}
+
+	.two-column-left .sidebar-1,
+	.two-column-right .mainSection,
+	.three-column-ll-l .sidebar-1,
+	.three-column-ll-r .sidebar-2,
+	.three-column-lr-l .sidebar-1,
+	.three-column-lr-r .sidebar-2,
+	.three-column-rr-l .mainSection,
+	.three-column-rr-r .mainSection {
+		order: 0;
+
+	}
+
+	.two-column-left .mainSection,
+	.two-column-right .sidebar-1,
+	.three-column-ll-l .sidebar-2,
+	.three-column-ll-r .sidebar-1,
+	.three-column-lr-l .mainSection,
+	.three-column-lr-r .mainSection,
+	.three-column-rr-l .sidebar-1,
+	.three-column-rr-r .sidebar-2 {
+		order: 1;
+	}
+
+	.three-column-ll-l .mainSection,
+	.three-column-ll-r .mainSection,
+	.three-column-lr-l .sidebar-2,
+	.three-column-lr-r .sidebar-1,
+	.three-column-rr-l .sidebar-2,
+	.three-column-rr-r .sidebar-1 {
+		order: 2;
+	}
+}
+
+@media (min-width: 1060px) {
+
+	.container {
+		max-width: 1040px;
+	}
+
+	.mainSection {
+		width: 700px;
+	}
+
+	.subSection {
+		width: 340px;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.container {
+		max-width: 1040px;
+	}
+
+	.mainSection {
+		width: 700px;
+	}
+
+	.subSection {
+		width: 340px;
+	}
+
+	.veu_contact p.contact_txt {
+		float: none;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+
+	.veu_contact .contact_bt {
+		float: none;
+		padding: inherit;
+	}
+
+}
+
+@media (min-width: 1400px) {
+
+	.container {
+		max-width: 1380px;
+	}
+
+	.mainSection {
+		width: 700px;
+	}
+
+	.subSection {
+		width: 340px;
+
+	}
+
+	.sidebar-2 {
+		display: block;
+	}
+}
