@@ -8,11 +8,10 @@
 // My VK Post Component.
 require_once 'inc/class-vk-component-posts-loop.php';
 require_once 'inc/class-vk-component-posts-relate.php';
-require_once 'inc/class-widget-appaer-disappear.php';
 
 // Layout Setting.
 require_once 'inc/layout/two-column.php';
-require_once 'inc/layout/three-colomn.php';
+require_once 'inc/layout/three-column.php';
 
 // Output Attributes.
 require_once 'inc/output-attributes.php';
